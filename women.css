@@ -1,0 +1,1416 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap');
+
+* {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ====================== navigation bar ================= */
+#bars{
+    display: none;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 170px 0px 120px;
+    overflow-x: hidden;
+}
+#navbar #startnav{
+    margin: 0px;
+}
+#navbar #startnav b {
+    font-size: 35px;
+    color: rgb(52, 58, 64);
+    margin:0px 0px 0px 55px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#navbar #startnav #startnavtitles {
+    display: flex;
+}
+
+#navbar #startnav #startnavtitles li {
+    list-style-type: none;
+    margin: 20px 15px 0px 15px;
+}
+
+#navbar #startnav #startnavtitles li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(52, 58, 64);
+}
+
+input[type="search"] {
+    width: 250px;
+    border-radius: 30px;
+    padding: 10px 0px 10px 8px;
+    border: none;
+    outline: none;
+    border: 0.2px solid rgb(52, 58, 64, 0.2);
+    margin: 0px;
+}
+
+#navbar #endnav form button {
+    color: white;
+    background-color: rgb(32, 201, 151);
+    border-radius: 50%;
+    padding: 12px 13px 12px 13px;
+    border: none;
+    outline: none;
+}
+
+#navbar #endnav #endnavcart {
+    display: block;
+    margin: 35px 0px 0px 180px;
+}
+
+#navbar #endnav #endnavcart a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+@media(max-width:1025px) {
+    #navbar {
+        justify-content: space-between;
+        padding: 60px 70px 0px 10px;
+    }
+
+    #navbar #startnav b {
+        font-size: 25px;
+        margin:0px 0px 0px 37px;
+    }
+
+    #navbar #startnav #startnavtitles li {
+        margin: 10px 15px 0px 0px;
+    }
+
+    #navbar #startnav #startnavtitles li a {
+        font-size: 14px;
+    }
+
+    input[type="search"] {
+        width: 200px;
+        padding: 8px 0px 8px 6px;
+    }
+
+    #navbar #endnav form button {
+        padding: 10px 11px 10px 11px;
+    }
+
+    #navbar #endnav #endnavcart {
+        margin: 20px 0px 0px 120px;
+    }
+
+    #navbar #endnav #endnavcart a {
+        font-size: 15px;
+    }
+}
+@media(max-width:769px) {
+    #navbar {
+        justify-content: space-between;
+        padding: 60px 30px 0px 0px;
+    }
+
+    #navbar #startnav b {
+        font-size: 25px;
+        margin:0px 0px 0px 37px;
+    }
+
+    #navbar #startnav #startnavtitles li {
+        margin: 10px 15px 0px 0px;
+    }
+
+    #navbar #startnav #startnavtitles li a {
+        font-size: 13px;
+    }
+
+    input[type="search"] {
+        width: 160px;
+        padding: 8px 0px 8px 6px;
+    }
+
+    #navbar #endnav form button {
+        padding: 9px 11px 9px 11px;
+    }
+
+    #navbar #endnav #endnavcart {
+        margin: 20px 0px 0px 100px;
+    }
+
+    #navbar #endnav #endnavcart a {
+        font-size: 14px;
+    }
+}
+@media(max-width:426px){
+    #bars{
+        display: block;
+    }
+    #navbar {
+        display: block;
+    }
+    #navbar #startnav{
+        margin: 0px 0px 30px 0px;
+    }
+    #navbar #startnav b {
+        font-size: 30px;
+        margin:0px 0px 0px 15px;
+    }
+    
+    #navbar #startnav #startnavtitles {
+        display: none;
+    }
+    input[type="search"] {
+        width: 335px;
+        margin: 0px 0px 30px 15px;
+    }
+    
+    #navbar #endnav form button {
+        padding: 11px 13px 11px 13px;
+    }
+    
+    #navbar #endnav #endnavcart {
+        display: none;
+    }
+    #input1:checked~ #navbar #startnav #startnavtitles{
+        display: block;
+        position: absolute;
+        width: 90%;
+        background-color: rgb(32, 201, 151);
+        padding-bottom: 50px;
+    }
+    #input1:checked~ #navbar #endnav #endnavcart{
+        display: block;
+        position: absolute;
+        top: 265px;
+        left: -65px;
+    }
+}
+
+/* ====================== offer ===================== */
+#offer {
+    background-color: rgb(32, 201, 151);
+    padding: 18px 0px 18px 460px;
+    overflow-x: hidden;
+}
+
+#offer a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+@media(max-width:1025px){
+    #offer {
+        padding: 16px 0px 16px 270px;
+    }
+    
+    #offer a {
+        font-size: 18px;
+    }
+}
+@media(max-width:769px){
+    #offer {
+        padding: 16px 0px 16px 170px;
+    }
+    
+    #offer a {
+        font-size: 16px;
+    }
+}
+@media(max-width:426px){
+    #offer {
+        padding: 16px 0px 16px 70px;
+    }
+}
+
+/* =============================== */
+#title {
+    margin: 20px 0px 20px 180px;
+    font-size: 15px;
+}
+
+#title a {
+    text-decoration: none;
+    color: rgb(32, 201, 151);
+}
+@media(max-width:1025px){
+    #title{
+        margin: 20px 0px 20px 50px;
+        font-size: 14px;
+    }
+}
+@media(max-width:769px){
+    #title{
+        margin: 20px 0px 20px 40px;
+        font-size: 13px;
+    }
+}
+@media(max-width:426px){
+    #title{
+        margin: 20px 0px 20px 20px;
+    }
+}
+/* ======================== hero ===================== */
+
+#hero {
+    margin: 0px 180px 0px 180px;
+    background-image: url("mensbackimg.jpg");
+    background-repeat: no-repeat;
+    background-size: 1130px 370px;
+    overflow-x: hidden;
+}
+
+#hero #hero1 {
+    font-size: 40px;
+    padding: 60px 0px 0px 50px;
+}
+
+#hero #hero2 {
+    margin: 220px 0px 0px 0px;
+    background-color: rgb(97, 97, 97);
+    padding: 18px 220px 18px 260px;
+
+}
+
+#hero #hero2 a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+@media(max-width:1025px){
+    #hero{
+        margin: 0px 50px 0px 50px;
+    }
+    #hero #hero1{
+    font-size: 35px;
+    }
+    #hero #hero2{
+        margin: 220px 0px 0px 0px;
+        padding: 18px 0px 18px 160px;
+    
+    }
+}
+@media(max-width:769px){
+    #hero{
+        margin: 0px 40px 0px 40px;
+        background-size: 850px 350px;
+    }
+    #hero #hero1{
+    font-size: 30px;
+    }
+    #hero #hero2{
+        padding: 18px 0px 18px 70px;
+    
+    }
+    #hero #hero2 a{
+        margin-left: 20px;
+    }
+}
+@media(max-width:426px){
+    #hero{
+        margin: 0px 20px 0px 20px;
+        background-size: 500px 350px;
+    }
+    #hero #hero1{
+    font-size: 25px;
+    }
+    #hero #hero2{
+        padding: 18px 0px 18px 40px;
+    
+    }                                                                                                                                                                       
+}
+/* ============================= */
+#up{
+    display: block;
+    position: fixed;
+    top: 700px;
+    right: 20px;
+}
+#up a{
+    color: white;
+    background-color:rgb(50 56 62);
+    padding: 18px 17px 18px 17px;
+    border-radius: 6px;
+}
+@media(max-width:1025px){
+    #up{
+       display: none;
+    }
+}
+@media(max-width:769px){
+   #up{
+      display: none;
+   }
+}
+@media(max-width:426px){
+   #up{
+      display: none;
+   }
+}
+/* ============================ hero second part ======================= */
+
+#herosecond {
+    display: flex;
+    margin: 30px 180px 0px 180px;
+    overflow-x: hidden;
+}
+
+#herosecond #herofirstdiv {
+    width: 350px;
+    height: 370px;
+    background-image: url("https://themewagon.github.io/footwear/images/img_bg_2.jpg");
+    background-size: 350px 370px;
+    background-repeat: no-repeat;
+}
+
+#herosecond #herofirstdiv h1 {
+    color: white;
+    font-size: 40px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+#herosecond #herofirstdiv a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(97, 97, 97);
+    padding: 20px 40px 20px 40px;
+    border-radius: 30px;
+    margin-left: 90px;
+    font-size: 17px;
+}
+
+#herosecond #herofirstdiv a:hover {
+    background-color: black;
+}
+
+#herosecond #heroseconddiv {
+    width: 350px;
+    height: 370px;
+    background-image: url("https://themewagon.github.io/footwear/images/women.jpg");
+    background-size: 350px 370px;
+    background-repeat: no-repeat;
+    margin-left: 32px;
+}
+
+#herosecond #heroseconddiv h1 {
+    color: white;
+    font-size: 40px;
+    margin-left: 110px;
+    margin-bottom: 50px;
+}
+
+#herosecond #heroseconddiv a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(97, 97, 97);
+    padding: 20px 40px 20px 40px;
+    border-radius: 30px;
+    margin-left: 90px;
+    font-size: 17px;
+}
+
+#herosecond #heroseconddiv a:hover {
+    background-color: black;
+}
+
+#herosecond #herothirddiv {
+    width: 350px;
+    height: 370px;
+    background-image: url("https://themewagon.github.io/footwear/images/item-11.jpg");
+    background-size: 350px 370px;
+    background-repeat: no-repeat;
+    margin-left: 32px;
+}
+
+#herosecond #herothirddiv h1 {
+    color: white;
+    font-size: 40px;
+    margin-left: 90px;
+    margin-bottom: 50px;
+}
+
+#herosecond #herothirddiv a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(97, 97, 97);
+    padding: 20px 40px 20px 40px;
+    border-radius: 30px;
+    margin-left: 90px;
+    font-size: 17px;
+}
+
+#herosecond #herothirddiv a:hover {
+    background-color: black;
+}
+@media(max-width:1025px){
+    #herosecond{
+        margin: 30px 50px 0px 50px;
+    }
+    #herosecond #herofirstdiv{
+        height: 350px;
+        background-size: 350px 350px;
+    }
+    #herosecond #herofirstdiv h1{
+        font-size: 35px;
+        margin-left: 60px;
+        margin-bottom: 40px;
+    }
+    #herosecond #herofirstdiv a{
+        margin-left: 60px;
+        font-size: 16px;
+    }
+    #herosecond #heroseconddiv{
+        width: 350px;
+        height: 350px;
+        background-size: 350px 350px;
+        margin-left: 25px;
+    }
+    #herosecond #heroseconddiv h1{
+        font-size: 35px;
+        margin-left: 90px;
+        margin-bottom: 40px;
+    }
+    #herosecond #heroseconddiv a{
+        margin-left: 70px;
+        font-size: 16px;
+    }
+    #herosecond #herothirddiv{
+        height: 350px;
+        background-size: 350px 350px;
+        margin-left: 25px;
+    }
+    #herosecond #herothirddiv h1{
+        font-size: 35px;
+        margin-left: 80px;
+        margin-bottom: 40px;
+    }
+    #herosecond #herothirddiv a{
+        margin-left: 80px;
+        font-size: 16px;
+    }
+}
+@media(max-width:769px){
+    #herosecond{
+        margin: 30px 40px 0px 40px;
+    }
+    #herosecond #herofirstdiv{
+        width: 350px;
+        height: 370px;
+        background-size: 350px 370px;
+    }
+    #herosecond #herofirstdiv h1{
+        color: white;
+        font-size: 35px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+    #herosecond #herofirstdiv a{
+        margin-left: 35px;
+        font-size: 16px;
+    }
+    #herosecond #heroseconddiv{
+        width: 350px;
+        height: 370px;
+        background-size: 350px 370px;
+        margin-left: 15px;
+    }
+    #herosecond #heroseconddiv h1{
+        font-size: 35px;
+        margin-left: 55px;
+        margin-bottom: 40px;
+    }
+    #herosecond #heroseconddiv a{
+        margin-left: 40px;
+        font-size: 16px;
+    }
+    #herosecond #heroseconddiv a:hover{
+        background-color: black;
+    }
+    #herosecond #herothirddiv{
+        width: 350px;
+        height: 370px;
+        background-size: 350px 370px;
+        margin-left: 15px;
+    }
+    #herosecond #herothirddiv h1{
+        color: white;
+        font-size: 35px;
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+    #herosecond #herothirddiv a{
+        margin-left: 35px;
+        font-size: 16px;
+    }
+}
+@media(max-width:426px){
+    #herosecond{
+        display: block;
+        margin: 30px 20px 0px 20px;
+    }
+    #herosecond #herofirstdiv{
+        width: 390px;
+        background-size: 390px 370px;
+    }
+    #herosecond #herofirstdiv h1{
+        font-size: 40px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+    #herosecond #herofirstdiv a{
+        margin-left: 110px;
+        font-size: 17px;
+    }
+    #herosecond #heroseconddiv{
+        width: 390px;
+        background-size: 390px 370px;
+        margin-left: 0px;
+    }
+    #herosecond #heroseconddiv h1{
+        font-size: 40px;
+        margin-left: 125px;
+        margin-bottom: 50px;
+    }
+    #herosecond #heroseconddiv a{
+        margin-left: 110px;
+        font-size: 17px;
+    }
+    #herosecond #herothirddiv{
+        width: 390px;
+        background-size: 390px 370px;
+        margin-left: 0px;
+    }
+    #herosecond #herothirddiv h1{
+        font-size: 40px;
+        margin-left: 110px;
+        margin-bottom: 50px;
+    }
+    #herosecond #herothirddiv a{
+        margin-left: 110px;
+        font-size: 17px;
+    }
+}
+/* ==================================== */
+#viewproducts {
+    font-size: 18px;
+    color: rgb(185, 187, 190);
+    margin: 130px 0px 90px 640px;
+    overflow-x: hidden;
+}
+@media(max-width:1025px){
+    #viewproducts{
+        margin: 100px 0px 80px 410px;
+    }
+}
+@media(max-width:769px){
+    #viewproducts{
+        font-size: 16px;
+        margin: 130px 0px 90px 300px;
+    }
+}
+@media(max-width:426px){
+    #viewproducts{
+        font-size: 16px;
+        margin: 130px 0px 90px 135px;
+    }
+}
+/* =========================== items ============================ */
+
+#itemsection {
+    display: flex;
+    margin:0px 0px 0px 180px;
+    overflow-x: hidden;
+}
+
+#itemsection #itembrand {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 0px 130px 0px 15px;
+    margin: 17px 0px 0px 0px;
+}
+
+#itemsection #itembrand h3 {
+    font-weight: lighter;
+    font-size: 16px;
+    color: rgb(97, 97, 97);
+}
+
+#itemsection #itembrand p {
+    line-height: 25px;
+}
+
+#itemsection #itembrand p a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(161, 163, 165);
+}
+
+#itemsection #itemsizewidth {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 0px 10px 0px 15px;
+    margin: 5px 0px 0px 0px;
+}
+
+#itemsection #itemsizewidth h3 {
+    font-weight: lighter;
+    font-size: 16px;
+    color: rgb(97, 97, 97);
+}
+
+#itemsection #itemsizewidth h5 {
+    font-weight: lighter;
+    color: rgb(97, 97, 97);
+}
+
+#itemsection #itemsizewidth p {
+    line-height: 50px;
+}
+
+#itemsection #itemsizewidth p .a1 {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(196, 198, 201);
+    padding: 10px 18px;
+}
+
+#itemsection #itemsizewidth p .a2 {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(196, 198, 201);
+    padding: 10px 6px;
+}
+
+#itemsection #itemsizewidth p .a3 {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(196, 198, 201);
+    padding: 10px 13px;
+}
+
+#itemsection #itemsizewidth p .a4 {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(196, 198, 201);
+    padding: 10px 10px;
+}
+
+#itemsection #itemsizewidth p a:hover{
+    background-color: rgb(97, 97, 97);
+}
+
+#itemsection #itemstyle{
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 0px 130px 0px 15px;
+    margin: 5px 0px 0px 0px;
+}
+#itemsection #itemstyle h3 {
+    font-weight: lighter;
+    font-size: 16px;
+    color: rgb(97, 97, 97);
+}
+
+#itemsection #itemstyle p {
+    line-height: 25px;
+}
+
+#itemsection #itemstyle p a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(161, 163, 165);
+}
+
+#itemsection #itemcolor{
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 0px 130px 0px 15px;
+    margin: 5px 0px 0px 0px;
+}
+#itemsection #itemcolor h3 {
+    font-weight: lighter;
+    font-size: 16px;
+    color: rgb(97, 97, 97);
+}
+
+#itemsection #itemcolor p {
+    line-height: 25px;
+}
+
+#itemsection #itemcolor p a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(161, 163, 165);
+}
+
+#itemsection #itemmaterial{
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 0px 130px 0px 15px;
+    margin: 5px 0px 0px 0px;
+}
+#itemsection #itemmaterial h3 {
+    font-weight: lighter;
+    font-size: 16px;
+    color: rgb(97, 97, 97);
+}
+
+#itemsection #itemmaterial p {
+    line-height: 25px;
+}
+
+#itemsection #itemmaterial p a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(161, 163, 165);
+}
+
+#itemsection #itemtechnology{
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 0px 130px 0px 15px;
+    margin: 5px 0px 0px 0px;
+}
+#itemsection #itemtechnology h3 {
+    font-weight: lighter;
+    font-size: 16px;
+    color: rgb(97, 97, 97);
+}
+
+#itemsection #itemtechnology p {
+    line-height: 25px;
+}
+
+#itemsection #itemtechnology p a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(161, 163, 165);
+}
+#itemsection #items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px 180px 0px 15px;
+}
+
+#itemsection #items .shoes {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    margin: 15px 15px 15px 15px;
+}
+
+#itemsection #items .shoes a {
+    text-decoration: none;
+    color: black;
+}
+
+#itemsection #items .shoes img {
+    width: 250px;
+}
+#itemsection #items .shoes img:hover{
+    scale: 1.2;
+    transition: scale 1s;
+}
+
+#itemsection #items .shoes h3 {
+    padding: 0px 0px 10px 90px;
+}
+@media(max-width:1025px){
+    
+#itemsection {
+    margin:0px 0px 0px 50px;
+}
+
+#itemsection #itembrand {
+    padding: 0px 95px 0px 15px;
+}
+
+#itemsection #itemsizewidth p .a1 {
+    padding: 8px 12px;
+}
+
+#itemsection #itemsizewidth p .a2 {
+    padding: 8px 0px;
+}
+
+#itemsection #itemsizewidth p .a3 {
+    padding: 8px 6px;
+}
+
+#itemsection #itemsizewidth p .a4 {
+    padding: 8px 3px;
+}
+
+#itemsection #itemstyle{
+    padding: 0px 95px 0px 15px;
+}
+
+#itemsection #itemcolor{
+    padding: 0px 95px 0px 15px;
+}
+
+#itemsection #itemmaterial{
+    padding: 0px 95px 0px 15px;
+}
+
+#itemsection #itemtechnology{
+    padding: 0px 95px 0px 15px;
+}
+
+#itemsection #items {
+    padding: 0px 50px 0px 15px;
+}
+
+#itemsection #items .shoes {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    margin:15px 10px 10px 10px;
+}
+
+#itemsection #items .shoes img {
+    width: 200px;
+}
+#itemsection #items .shoes h3 {
+    padding: 0px 0px 10px 65px;
+}
+}
+@media(max-width:769px){
+    #itemsection {
+        display: grid;
+        grid-template-columns: auto;
+        margin:0px 0px 0px 50px;
+    }
+    
+    #itemsection #itembrand {
+        padding: 0px 0px 0px 15px;
+        margin: 17px 50px 0px 0px;
+    }
+    
+    #itemsection #itemsizewidth {
+        padding: 0px 0px 0px 15px;
+        margin: 5px 50px 0px 0px;
+    }
+    
+    #itemsection #itemsizewidth p .a1 {
+        padding: 10px 18px;
+    }
+    
+    #itemsection #itemsizewidth p .a2 {
+        padding: 10px 6px;
+    }
+    
+    #itemsection #itemsizewidth p .a3 {
+        padding: 10px 13px;
+    }
+    
+    #itemsection #itemsizewidth p .a4 {
+        padding: 10px 10px;
+    }
+    
+    #itemsection #itemstyle{
+        padding: 0px 0px 0px 15px;
+        margin: 5px 50px 0px 0px;
+    }
+   
+    #itemsection #itemcolor{
+        padding: 0px 0px 0px 15px;
+        margin: 5px 50px 0px 0px;
+    }
+    
+    #itemsection #itemmaterial{
+        padding: 0px 0px 0px 15px;
+        margin: 5px 50px 0px 0px;
+    }
+    
+    #itemsection #itemtechnology{
+        padding: 0px 0px 0px 15px;
+        margin: 5px 50px 0px 0px;
+    }
+    #itemsection #items {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 0px 25px 0px 0px;
+    }
+    
+    #itemsection #items .shoes {
+        margin: 30px 25px 0px 0px;
+    }
+
+    #itemsection #items .shoes img {
+        width: 320px;
+    }
+
+    #itemsection #items .shoes h3 {
+        padding: 0px 0px 10px 125px;
+    }
+}
+@media(max-width:426px){
+    #itemsection {
+        display: grid;
+        grid-template-columns: auto;
+        margin:0px 0px 0px 20px;
+    }
+    
+    #itemsection #itembrand {
+        padding: 0px 0px 0px 15px;
+        margin: 17px 20px 0px 0px;
+    }
+    
+    #itemsection #itemsizewidth {
+        padding: 0px 0px 0px 15px;
+        margin: 5px 20px 0px 0px;
+    }
+    
+    #itemsection #itemsizewidth p .a1 {
+        padding: 10px 18px;
+    }
+    
+    #itemsection #itemsizewidth p .a2 {
+        padding: 10px 6px;
+    }
+    
+    #itemsection #itemsizewidth p .a3 {
+        padding: 10px 13px;
+    }
+    
+    #itemsection #itemsizewidth p .a4 {
+        padding: 10px 10px;
+    }
+    
+    #itemsection #itemstyle{
+        padding: 0px 0px 0px 15px;
+        margin: 5px 20px 0px 0px;
+    }
+   
+    #itemsection #itemcolor{
+        padding: 0px 0px 0px 15px;
+        margin: 5px 20px 0px 0px;
+    }
+    
+    #itemsection #itemmaterial{
+        padding: 0px 0px 0px 15px;
+        margin: 5px 20px 0px 0px;
+    }
+    
+    #itemsection #itemtechnology{
+        padding: 0px 0px 0px 15px;
+        margin: 5px 20px 0px 0px;
+    }
+    #itemsection #items {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0px 25px 0px 0px;
+    }
+    
+    #itemsection #items .shoes {
+        margin: 30px -5px 0px 0px;
+    }
+
+    #itemsection #items .shoes img {
+        width: 385px;
+    }
+
+    #itemsection #items .shoes h3 {
+        padding: 0px 0px 10px 125px;
+    }
+}
+
+/* ======================== page change option ====================== */
+#changeoption {
+    margin: 70px 0px 200px 730px;
+}
+
+#changeoption a {
+    text-decoration: none;
+    color: rgb(185, 187, 190);
+    font-size: 18px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 10px 15px 10px 15px;
+    border-radius: 50%;
+}
+
+#changeoption #firstpage {
+    background-color: rgb(97, 97, 97);
+}
+@media(max-width:1025px){
+    #changeoption{
+        margin: 70px 0px 180px 500px ;
+    }
+}
+@media(max-width:769px){
+    #changeoption{
+        margin: 70px 0px 200px 230px ;
+    }
+}
+@media(max-width:426px){
+    #changeoption{
+        margin: 70px 0px 150px 80px ;
+    }
+    #changeoption a{
+        font-size: 15px;
+        padding: 8px 12px 8px 12px;
+    }
+}
+/* ============================= brands ===================== */
+#brands{
+    overflow-x: hidden;
+}
+#brands #partner {
+    font-size: 20px;
+    color: rgb(185, 187, 190);
+    margin-left: 650px;
+
+}
+
+#brands #brandlogo {
+    display: flex;
+    padding: 100px 140px 200px 130px;
+}
+
+#brands #brandlogo div img {
+    width: 200px;
+    margin: 0px 20px 0px 20px;
+}
+@media(max-width:1025px){
+    #brands #partner {
+        font-size: 18px;
+        margin-left: 430px;
+    }
+    
+    #brands #brandlogo {
+        padding: 80px 0px 120px 50px;
+    }
+    
+    #brands #brandlogo div img {
+        width: 150px;
+    }
+}
+@media(max-width:769px){
+    #brands #partner {
+        margin-left: 310px;
+    }
+    
+    #brands #brandlogo {
+        padding: 80px 0px 100px 30px;
+    }
+    
+    #brands #brandlogo div img {
+        width: 120px;
+        margin: 0px 12px 0px 12px;
+    }
+}
+@media(max-width:426px){
+    #brands #partner {
+        font-size: 18px;
+        margin-left: 110px;
+    }
+    
+    #brands #brandlogo {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 100px 0px 80px 20px;
+    }
+    
+    #brands #brandlogo div img {
+        width: 150px;
+        margin: 10px 20px 10px 20px;
+    }
+}
+/* ============================== footer =========================== */
+
+#footer {
+    display: flex;
+    padding: 0px 0px 80px 180px;
+    overflow-x: hidden;
+}
+
+#footer .footertitle h4 {
+    color: rgb(52, 58, 64);
+}
+
+#footer #footerabout p {
+    font-size: 17px;
+    line-height: 25px;
+    color: rgb(124, 125, 126);
+}
+
+#footer #footerabout a {
+    color: rgb(52, 58, 64);
+    font-size: 18px;
+    padding: 8px;
+}
+
+#footer #footercare {
+    margin-left: 35px;
+}
+
+#footer #footercare p {
+    line-height: 35px;
+}
+
+#footer #footercare p a {
+    text-decoration: none;
+    color: rgb(124, 125, 126);
+    font-size: 14px;
+
+}
+
+#footer #footerinfo {
+    margin-left: 75px;
+}
+
+#footer #footerinfo p {
+    line-height: 35px;
+}
+
+#footer #footerinfo p a {
+    text-decoration: none;
+    color: rgb(124, 125, 126);
+    font-size: 14px;
+}
+
+#footer #footernews {
+    margin-left: 75px;
+}
+
+#footer #footernews p {
+    line-height: 35px;
+}
+
+#footer #footernews p a {
+    text-decoration: none;
+    color: rgb(124, 125, 126);
+    font-size: 14px;
+}
+
+#footer #footercontact {
+    margin-left: 120px;
+}
+
+#footer #footercontact #p1 {
+    font-size: 15px;
+    line-height: 25px;
+    color: rgb(124, 125, 126);
+}
+
+#footer #footercontact #p2 {
+    line-height: 35px;
+}
+
+#footer #footercontact #p2 a {
+    text-decoration: none;
+    color: rgb(124, 125, 126);
+    font-size: 14px;
+}
+@media(max-width:1025px){
+    #footer {
+        padding: 0px 0px 80px 80px;
+    }
+    #footer #footerabout p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    #footer #footerabout a {
+        font-size: 15px;
+        padding: 7px;
+    }
+    
+    #footer #footercare {
+        margin-left: 20px;
+    }
+    
+    #footer #footercare p {
+        line-height: 25px;
+    }
+    
+    #footer #footercare p a {
+        font-size: 12px;
+    
+    }
+    
+    #footer #footerinfo {
+        margin:0px 0px 0px 35px;
+    }
+    
+    #footer #footerinfo p {
+        line-height: 25px;
+    }
+    
+    #footer #footerinfo p a {
+        font-size: 12px;
+    }
+    
+    #footer #footernews {
+        margin-left: 20px;
+    }
+    
+    #footer #footernews p {
+        line-height: 25px;
+    }
+    
+    #footer #footernews p a {
+        font-size: 12px;
+    }
+    
+    #footer #footercontact {
+        margin-left: 60px;
+    }
+    
+    #footer #footercontact #p1 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    #footer #footercontact #p2 {
+        line-height: 25px;
+    }
+    
+    #footer #footercontact #p2 a {
+        text-decoration: none;
+        color: rgb(124, 125, 126);
+        font-size: 12px;
+    }
+}
+@media(max-width:769px){
+    #footer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 0px 0px 80px 70px;
+    }
+    
+    #footer #footerabout p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    #footer #footercare {
+       margin-left: 80px;
+    }
+    
+    #footer #footercare p {
+        line-height: 25px;
+    }
+    
+    #footer #footercare p a {
+        font-size: 13px;
+    
+    }
+    
+    #footer #footerinfo {
+       margin-right: 60px;
+    }
+    
+    #footer #footerinfo p {
+        line-height: 25px;
+    }
+    
+    #footer #footerinfo p a {
+        font-size: 13px;
+    }
+    
+    #footer #footernews {
+        margin-left: 0px;
+    }
+    
+    #footer #footernews p {
+        line-height: 25px;
+    }
+    
+    #footer #footernews p a {
+        font-size: 13px;
+    }
+    
+    #footer #footercontact {
+        margin-left: 80px;
+    }
+    
+    #footer #footercontact #p1 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    #footer #footercontact #p2 {
+        line-height: 25px;
+    }
+    
+    #footer #footercontact #p2 a {
+        font-size: 13px;
+    }
+}
+@media(max-width:426px){
+    #footer {
+        display: block;
+        padding: 0px 0px 40px 30px;
+    }
+    
+    #footer #footerabout p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    
+    #footer #footerabout a {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    #footer #footercare {
+        margin-left: 0px;
+    }
+    
+    #footer #footercare p {
+        line-height: 30px;
+    }
+    
+    #footer #footercare p a {
+        font-size: 15px;
+    
+    }
+    
+    #footer #footerinfo {
+        margin:0px;
+    }
+    
+    #footer #footerinfo p {
+        line-height: 30px;
+    }
+    
+    #footer #footerinfo p a {
+        font-size: 15px;
+    }
+    
+    #footer #footernews {
+        margin-left: 0px;
+    }
+    
+    #footer #footernews p {
+        line-height: 30px;
+    }
+    
+    #footer #footernews p a {
+        font-size: 15px;
+    }
+    
+    #footer #footercontact {
+        margin-left:0px;
+    }
+    
+    #footer #footercontact #p1 {
+        line-height: 20px;
+    }
+    
+    #footer #footercontact #p2 {
+        line-height: 30px;
+    }
+    
+    #footer #footercontact #p2 a {
+        font-size: 15px;
+    }
+}
